@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resent.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="phone">
+         <!-- Top Navigation  -->
+        <header class="TopNavigation">
+            <nav class="Home">
+                <h1>Home</h1>
+                <button class="settings"><img src="img/ph_gear-light.svg" alt="#"></button>
+            </nav>
+            <nav class="Family">
+                <h2>Family Members</h2>
+                <div class="avatar-stack">
+                    <div class="avatar" data-name="Ivan">
+                        <img class="img_avatar" src="img/Ellipse 4.png" alt="Ivan">
+                    </div>
+                    <div class="avatar" data-name="Maria">
+                        <img class="img_avatar" src="img/Ellipse 3.png" alt="Maria">
+                    </div>
+                    <div class="avatar" data-name="Anna">
+                        <img class="img_avatar" src="img/Ellipse 2.png" alt="Anna">
+                    </div>
+                    <div class="avatar" data-name="Pavel">
+                        <img class="img_avatar" src="img/Ellipse 1.png" alt="Pavel">
+                    </div>
+                </div>
+            </nav>
+        </header>  
+
+         <!-- Section MAIN  -->
+
+        <section class="Main" id="Main_class">
+            <img class="img_wether" src="img/Weather Widget.svg" alt="">
+            
+            <div class="tabs">
+                <div class="indicator"></div>
+                    <button class="tab active" data-target="rooms">Room</button>
+                    <button class="tab" data-target="devices">Devices</button>
+            </div>
+            
+            
+            <div class="tab-content">
+                <div class="content rooms active">
+                    <div class="card">
+                         <img src="img/Image-01.jpg" alt="Master Bedroom">
+                         <div>
+                           <h2>Master Bedroom</h2>
+                           <h3>4 Devices</h3>
+                         </div>
+                         <div class="toggle-container">
+                           <span class="toggle-label">OFF</span>
+                           <div class="toggle">
+                             <div class="toggle-circle">
+                                 <div class="circle-base"></div>
+                                 <div class="circle-gradient"></div>
+                             </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="img/Image-02.jpg" alt="Living Room">
+                      <div>
+                        <h2>Living Room</h2>
+                        <h3>8 Devices</h3>
+                      </div>
+                      <div class="toggle-container">
+                        <span class="toggle-label">OFF</span>
+                        <div class="toggle">
+                            <div class="toggle-circle">
+                                <div class="circle-base"></div>
+                                <div class="circle-gradient"></div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="img/Image-03.jpg" alt="Living Room">
+                      <div>
+                        <h2>Dining Room</h2>
+                        <h3>6 Devices</h3>
+                      </div>
+                      <div class="toggle-container">
+                        <span class="toggle-label">OFF</span>
+                        <div class="toggle">
+                            <div class="toggle-circle">
+                                <div class="circle-base"></div>
+                                <div class="circle-gradient"></div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="img/Image-04.jpg" alt="Living Room">
+                      <div>
+                        <h2>Washing Room</h2>
+                        <h3>4 Devices</h3>
+                      </div>
+                      <div class="toggle-container">
+                        <span class="toggle-label">OFF</span>
+                        <div class="toggle">
+                            <div class="toggle-circle">
+                                <div class="circle-base"></div>
+                                <div class="circle-gradient"></div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="content devices">
+                    <div class="card device-card">
+                        <div class="device-image heater-card">
+                            <img class="img-gray" src="img/non-color/mdi_heater.png" alt="Heater Lamp">
+                            <img class="img-color" src="img/color/mdi_heater.png" alt="Heater Lamp">
+                        </div>
+                    
+                        <h2 class="device-title">Heater Lamp</h2>
+                        <h3 class="device-count">4 Devices</h3>
+                    
+                        <div class="toggle-container">
+                            <span class="toggle-label">OFF</span>
+                            <div class="toggle">
+                                <div class="toggle-circle">
+                                    <div class="circle-base"></div>
+                                    <div class="circle-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card device-card">
+                        <div class="device-image">
+                            <img class="img-gray" src="img/non-color/mdi_lights.png" alt="Smart Lamp">
+                            <img class="img-color" src="img/color/mdi_lights.png" alt="Smart Lamp">
+                        </div>
+                    
+                        <h2 class="device-title">Heater Lamp</h2>
+                        <h3 class="device-count">8 Devices</h3>
+                    
+                        <div class="toggle-container">
+                            <span class="toggle-label">OFF</span>
+                            <div class="toggle">
+                                <div class="toggle-circle">
+                                    <div class="circle-base"></div>
+                                    <div class="circle-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card device-card">
+                        <div class="device-image">
+                            <img class="img-gray" src="img/non-color/mdi_electric-water-heater.png" alt="Geyser">
+                            <img class="img-color" src="img/color/mdi_electric-water-heater.png" alt="Geyser">
+                        </div>
+                    
+                        <h2 class="device-title">Geyser</h2>
+                        <h3 class="device-count">2 Devices</h3>
+                    
+                        <div class="toggle-container">
+                            <span class="toggle-label">OFF</span>
+                            <div class="toggle">
+                                <div class="toggle-circle">
+                                    <div class="circle-base"></div>
+                                    <div class="circle-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card device-card">
+                        <div class="device-image">
+                            <img class="img-gray" src="img/non-color/material-symbols_tv-gen-outline.png" alt="TV">
+                            <img class="img-color" src="img/color/material-symbols_tv-gen-outline.png" alt="TV">
+                        </div>
+                    
+                        <h2 class="device-title">TV</h2>
+                        <h3 class="device-count">1 Devices</h3>
+                    
+                        <div class="toggle-container">
+                            <span class="toggle-label">OFF</span>
+                            <div class="toggle">
+                                <div class="toggle-circle">
+                                    <div class="circle-base"></div>
+                                    <div class="circle-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+               
+        <nav class="tabbar" aria-label="Main navigation">
+            <button class="tabbtn tab-home" data-type="home" aria-pressed="true">
+                <img class="icon icon-home" src="img/icon color/Home Icon.svg" alt="Home" data-color="img/icon color/Home Icon.svg" data-gray="img/icon non-color/Home Icon.svg">
+            </button>
+              <button class="tabbtn tab-mic" data-type="mic" aria-pressed="false">
+                <div class="mic-wrapper" aria-hidden="false">
+                    <div class="mic-circle mic-circle-outer"></div>
+                    <div class="mic-circle mic-circle-mid"></div>
+                    <div class="mic-circle mic-circle-inner"></div>
+                    <img class="icon icon-mic" src="img/icon color/notUse voice.svg" alt="Voice" data-blue="img/icon color/notUse voice.svg" data-purple="img/icon color/Use voice.svg">
+                </div>
+            </button>
+            <button class="tabbtn tab-account" data-type="account" aria-pressed="false">
+                <img class="icon icon-account" src="img/icon non-color/User Icon.svg" alt="Account" data-color="img/icon color/User Icon.svg" data-gray="img/icon non-color/User Icon.svg">
+            </button>
+
+            <div class="tab-indicator" aria-hidden="true"></div>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
