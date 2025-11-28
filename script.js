@@ -28,6 +28,7 @@ tabs.forEach((tab, index) => {
         const imgGray = card.querySelector('.img-gray');
         const imgColor = card.querySelector('.img-color');
         const label = card.querySelector('.toggle-label');
+        
 
 
         if (toggle.classList.contains('on')) {
@@ -35,11 +36,13 @@ tabs.forEach((tab, index) => {
           label.style.color = '#3C3C43';
           imgGray.style.opacity = "0";
           imgColor.style.opacity = "1";
+          
         } else {
           label.textContent = 'OFF';
           label.style.color = '#909197';
           imgGray.style.opacity = "1";
           imgColor.style.opacity = "0";
+          
         }
     });
   });
