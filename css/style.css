@@ -8,15 +8,31 @@ body{
   max-width: 500px;           
   min-height: 950px;          
   margin: 0 auto;             
-  padding: 47px 32px 24px 32px;
+  padding: 24px 32px 24px 32px;
   background-color: #F9F9F9;
   overflow: hidden;
 }
-
+.TopNavigation {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height:152px;
+  max-width: 500px; 
+  background: rgba(255,255,255,0.80);
+  backdrop-filter: blur(10px) saturate(120%); 
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  z-index: 10; 
+  padding: 24px 32px 24px 32px; 
+  box-sizing: border-box;
+  border-bottom: 2px solid #A0A0A0;
+}
 .Home{
   display: flex;
   justify-content: space-between;
 }
+
 .settings{
   width: 36px;
   height: 36px;
@@ -50,8 +66,8 @@ body{
 }
 
 .img_avatar{
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 .avatar:first-child {
   margin-left: 0;
@@ -76,21 +92,12 @@ body{
 .avatar:hover::after {
   opacity: 1;
 }
-.img_line {
-  position: absolute;
-  left: 0;
-  width: 100%; 
-  height: 2px;
-  background-image: url("../img/Line.svg");
-  background-repeat: repeat-x; 
-  background-size: auto 100%; 
-}
+
 .Main{
   display: block;
-  padding-top: 26px;
+  padding-top: 150px; 
 }
 
-/*Переключатель room/device*/
 .tabs {
   position: relative;
   display: flex;
@@ -130,7 +137,7 @@ body{
   color: #000;
 }
 
-/* --- Контент вкладок --- */
+
 .tab-content {
   position: relative;
 
@@ -158,7 +165,7 @@ body{
   position: relative;
 }
 
-/*Карты*/
+
 .card {
   background: #fff;
   border-radius: 12px;
@@ -196,7 +203,6 @@ body{
   margin: 2px 0 0 0;
 }
 
-/* Внешний вид карточки device*/
 .device-card {
   padding-top: 20px;
   display: flex;
@@ -223,7 +229,6 @@ body{
   transition: opacity .6s ease;
 }
 
-
 .device-image .img-gray {
   opacity: 1;
 }
@@ -232,7 +237,6 @@ body{
   opacity: 0;
 }
 
-
 .toggle.on ~ .device-image .img-gray {
   opacity: 0;
 }
@@ -240,7 +244,6 @@ body{
 .toggle.on ~ .device-image .img-color {
   opacity: 1;
 }
-
 
 .device-title {
   text-align: center;
@@ -257,14 +260,13 @@ body{
   margin-top: 3px;
 }
 
-
 .toggle-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: calc(100% - 10px);
   padding: 10px;
-  z-index: 100;
+  z-index: 4;
 }
 
 .toggle-label {
@@ -282,7 +284,7 @@ body{
   border-radius: 20px;
   cursor: pointer;
   flex-shrink: 0;
-  z-index: 100;
+  z-index: 4;
 }
 
 .toggle-circle {
@@ -346,7 +348,7 @@ body{
   backdrop-filter: blur(10px) saturate(120%); 
   -webkit-backdrop-filter: blur(10px) saturate(120%);
   box-shadow: 0 6px 20px rgba(12,20,40,0.12);
-  z-index: 9998;
+  z-index: 8;
 }
 
 .tabbtn {
@@ -452,5 +454,4 @@ body{
   .tabbtn { width: calc((100% - 36px) / 3); }
 }
 
-/* ensure indicator initial placement doesn't break */
 .tab-indicator.hidden { opacity: 0; }
